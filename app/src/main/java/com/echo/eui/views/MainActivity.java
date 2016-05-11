@@ -10,7 +10,7 @@ import com.echo.eui.R;
 import com.echo.eui.service.CountService;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button start;
+    private Button start,stop;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,15 +18,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         start = (Button) findViewById(R.id.start_service);
+        stop = (Button) findViewById(R.id.stop_service);
         start.setOnClickListener(this);
+        stop.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
+        Intent intent = new Intent(this, CountService.class);
         switch (v.getId()) {
             case R.id.start_service:
-                Intent intent = new Intent(this, CountService.class);
                 startService(intent);
+                break;
+            case R.id.stop_service:
+                stopService(intent);
                 break;
         }
     }

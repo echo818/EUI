@@ -11,6 +11,14 @@
         android:id="@+id/start_service"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="startService" />
+        android:text="startService"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/stop_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stopService"
+        android:textAllCaps="false" />
 
 </LinearLayout>
