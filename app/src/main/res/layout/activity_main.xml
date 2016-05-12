@@ -35,4 +35,18 @@
         android:text="unbindService"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/bind_remote_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bindRemoteService"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/unbind_remote_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="unbindRemoteService"
+        android:textAllCaps="false" />
+
 </LinearLayout>
