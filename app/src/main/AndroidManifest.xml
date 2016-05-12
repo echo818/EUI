@@ -15,7 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".service.CountService" />
+        <service
+            android:name=".service.CountService"
+            android:enabled="true" />
     </application>
 
 </manifest>

@@ -21,4 +21,18 @@
         android:text="stopService"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/bind_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bindService"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/unbind_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="unbindService"
+        android:textAllCaps="false" />
+
 </LinearLayout>
