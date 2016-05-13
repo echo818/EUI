@@ -15,7 +15,7 @@ import java.util.List;
 
 public class DataActivity extends AppCompatActivity implements View.OnClickListener {
     private EditText id, name, pass;
-    private Button add, update, delete, multiDelete, find, multiFind, page, select;
+    private Button add, update, delete, multiDelete, find, multiFind, page, select, count;
     private TextView tv;
     private PersonService service;
 
@@ -54,9 +54,17 @@ public class DataActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.data_select:
                 select();
                 break;
+            case R.id.data_count:
+                count();
+                break;
             default:
                 break;
         }
+    }
+
+    private void count() {
+        long count = service.getCount();
+        tv.setText(count + "");
     }
 
     private void page() {
@@ -117,6 +125,7 @@ public class DataActivity extends AppCompatActivity implements View.OnClickListe
         multiFind = (Button) findViewById(R.id.data_multiFind);
         page = (Button) findViewById(R.id.data_page);
         select = (Button) findViewById(R.id.data_select);
+        count = (Button) findViewById(R.id.data_count);
 
         tv = (TextView) findViewById(R.id.data_tv);
 
@@ -128,6 +137,7 @@ public class DataActivity extends AppCompatActivity implements View.OnClickListe
         multiFind.setOnClickListener(this);
         page.setOnClickListener(this);
         select.setOnClickListener(this);
+        count.setOnClickListener(this);
 
         service = new PersonService(this, 3);
     }

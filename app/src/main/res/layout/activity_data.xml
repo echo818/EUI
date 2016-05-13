@@ -36,53 +36,99 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/data_add"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="添加数据" />
+        android:gravity="center"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/data_update"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="更新数据" />
+        <Button
+            android:id="@+id/data_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加数据" />
 
-    <Button
-        android:id="@+id/data_delete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="删除一条数据" />
+        <Button
+            android:id="@+id/data_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更新数据" />
 
-    <Button
-        android:id="@+id/data_multiDelete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="删除多条数据" />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/data_find"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="查询一条数据" />
+        android:gravity="center"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/data_multiFind"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="查询多条数据" />
+        <Button
+            android:id="@+id/data_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除一条数据" />
 
-    <Button
-        android:id="@+id/data_page"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="分页查询数据" />
+        <Button
+            android:id="@+id/data_multiDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除多条数据" />
 
-    <Button
-        android:id="@+id/data_select"
-        android:layout_width="wrap_content"
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="查询所有数据" />
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/data_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询一条数据" />
+
+        <Button
+            android:id="@+id/data_multiFind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询多条数据" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/data_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分页查询数据" />
+
+        <Button
+            android:id="@+id/data_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询所有数据" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/data_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取总记录数" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/data_tv"
